@@ -268,8 +268,8 @@ def _process_crossencoder_dataloader(context_input, label_input, crossencoder_pa
     )
     return dataloader
 
-
-def _run_crossencoder(crossencoder, dataloader, logger, context_len, device="cuda"):
+# device="cuda" -> device="cpu"
+def _run_crossencoder(crossencoder, dataloader, logger, context_len, device="cpu"):
     crossencoder.model.eval()
     accuracy = 0.0
     crossencoder.to(device)
