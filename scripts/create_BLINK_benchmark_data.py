@@ -238,7 +238,7 @@ store_questions(testa_blink, out_testa_aida_filename)
 out_testb_aida_filename = "data/BLINK_benchmark/AIDA-YAGO2_testb.jsonl"
 store_questions(testb_blink, out_testb_aida_filename)
 
-
+'''
 # ACE 2004
 print("ACE 2004")
 in_ace_filename = "data/train_and_benchmark_data/basic_data/test_datasets/wned-datasets/ace2004/ace2004.conll"
@@ -281,3 +281,4 @@ wnedwiki_questions = convert_to_BLINK_format(extract_questions(in_wnedwiki_filen
 out_wnedwiki_filename = "data/BLINK_benchmark/wnedwiki_questions.jsonl"
 store_questions(wnedwiki_questions, out_wnedwiki_filename)
 print(len(wnedwiki_questions))
+'''
